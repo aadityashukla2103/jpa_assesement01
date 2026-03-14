@@ -58,6 +58,10 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order [orderId=" + orderId + ", orderDate=" + orderDate + ", orderAmt=" + orderAmt + "]";
+        return "Order [orderId=" + orderId +
+               ", orderDate=" + orderDate +
+               ", orderAmt=" + orderAmt +
+               ", customerName=" + customer.getCustomerName() +
+               "]";
     }
 }
