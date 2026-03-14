@@ -3,7 +3,9 @@
 
     <persistence-unit name="abes">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.abes.entity.Dept</class>
+        <class>com.abes.entity.Customer</class>
+        <class>com.abes.entity.Order</class>
+
         <properties>
 
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/abes"/>
