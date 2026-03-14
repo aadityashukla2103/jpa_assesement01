@@ -45,6 +45,17 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer [customerId=" + customerId + ", customerName=" + customerName + "]";
+        String orderInfo = "";
+
+        if(orders != null) {
+            for(Order o : orders) {
+                orderInfo += o.getOrderId() + " ";
+            }
+        }
+
+        return "Customer [customerId=" + customerId +
+               ", customerName=" + customerName +
+               ", orders=" + orderInfo +
+               "]";
     }
 }
